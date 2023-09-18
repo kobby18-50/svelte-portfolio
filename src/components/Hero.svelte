@@ -3,6 +3,7 @@
     import { Icon } from 'flowbite-svelte-icons'
 	import IMG from '../assets/me-bishwas.jpg';
 	import REACT from '../assets/icons/icons8-react.svg';
+	import TextCarousel from './TextCarousel.svelte';
 
 	let visibleItems = 4;
 
@@ -50,6 +51,8 @@
 			caption: 'Typescript'
 		}
 	];
+
+	
 </script>
 
 <main class="flex flex-col sm:flex-row sm:space-x-10">
@@ -61,7 +64,8 @@
 
 	<div>
 		<Heading tag="h3">Hey, Geeks!</Heading>
-		<p>I am Edward</p>
+		<TextCarousel/>
+		
 
 		<p class="mt-5">
 			I am a Full-Stack Web developer doing Node.js and Express.js, React.js & Svelte/Kit. I love to

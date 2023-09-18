@@ -1,7 +1,8 @@
 <script>
     import { Gallery } from "flowbite-svelte";
     import DICTIONARY from '../../assets/projects/dictionary.png'
-    import LIBRARY from '../../assets/projects/library.png'
+    import LIBRARY from '../../assets/projects/library2.png'
+    // import LIBRARY from '../../assets/projects/l'
 
     const images = [
         {   
@@ -10,12 +11,12 @@
             src : DICTIONARY,
             link : 'https://svelte-dictionary-eta.vercel.app'
         },
-        // {   
-        //     id: 2,
-        //     alt : 'dictionary',
-        //     src : LIBRARY,
-        //     link : 'https://svelte-dictionary-eta.vercel.app'
-        // }
+        {   
+            id: 2,
+            alt : 'dictionary',
+            src : LIBRARY,
+            link : 'https://svelte-dictionary-eta.vercel.app'
+        }
     ]
 </script>
 
