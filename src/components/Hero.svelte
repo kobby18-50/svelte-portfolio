@@ -56,7 +56,7 @@
 
 <main class="flex flex-col sm:flex-row sm:space-x-10">
 	<div>
-		<figure class="mt-12">
+		<figure class="mt-14">
 			<img src={IMG} alt="" class="animate-bounce" />
 		</figure>
 	</div>
