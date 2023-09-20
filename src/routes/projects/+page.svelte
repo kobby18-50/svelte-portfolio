@@ -1,23 +1,110 @@
 <script>
-    import { Gallery } from "flowbite-svelte";
-    import DICTIONARY from '../../assets/projects/dictionary.png'
-    import LIBRARY from '../../assets/projects/library2.png'
-    // import LIBRARY from '../../assets/projects/l'
+	import { Heading } from "flowbite-svelte";
+    import { Icon } from 'flowbite-svelte-icons'
 
-    const images = [
-        {   
-            id: 1,
-            alt : 'dictionary',
-            src : DICTIONARY,
-            link : 'https://svelte-dictionary-eta.vercel.app'
+    const personalProjects = [
+        {
+            id : 1,
+            title : 'WDWR',
+            description : 'A job listing application built as a personal project. Search for jobs, and apply!',
+            languages : [
+                {
+                    id : 1,
+                    title : 'React'
+                },
+                {
+                    id : 2,
+                    title : 'Typescript'
+                },
+                {
+                    id : 3,
+                    title : 'Tailwindcss'
+                },
+                {
+                    id : 4,
+                    title : 'Jobsearch api'
+                },
+
+            ],
+
+            github : 'https://github.com/kobby18-50/react-job-search',
+            web : ''
         },
-        {   
-            id: 2,
-            alt : 'dictionary',
-            src : LIBRARY,
-            link : 'https://svelte-dictionary-eta.vercel.app'
-        }
+
+        {
+            id : 2,
+            title : 'library application (VIEW)',
+            description : 'A basic but intensive library app with user login, registeration and CRUD functionalities',
+            languages : [
+                {
+                    id : 1,
+                    title : 'Svelte'
+                },
+                {
+                    id : 2,
+                    title : 'Typescript'
+                },
+                {
+                    id : 3,
+                    title : 'Tailwindcss'
+                }
+            ],
+
+            github : 'https://github.com/kobby18-50/svelte-library-auth-3.0',
+            web : ''
+        },
+
+        {
+            id : 3,
+            title : 'library application (MC)',
+            description : 'A basic but intensive library app with user login, registeration and CRUD functionalities',
+            languages : [
+                {
+                    id : 1,
+                    title : 'Node'
+                },
+                {
+                    id : 2,
+                    title : 'Express'
+                },
+                {
+                    id : 3,
+                    title : 'Mongodb'
+                }
+            ],
+
+            github : 'https://github.com/kobby18-50/node_express_library3.0',
+            web : ''
+        },
+        {
+            id : 3,
+            title : 'Dictionary app',
+            description : 'A library app that can be viewed on different screens',
+            languages : [
+                {
+                    id : 1,
+                    title : 'Svelte'
+                },
+                {
+                    id : 2,
+                    title : 'Typescript'
+                },
+                {
+                    id : 3,
+                    title : 'Tailwindcss'
+                },
+               
+
+            ],
+
+            github : 'https://github.com/kobby18-50/svelte-dictionary',
+            web : 'https://svelte-dictionary-eta.vercel.app'
+        },
     ]
+
+  
+
+   
 </script>
 
 
@@ -28,35 +115,34 @@
 
     <p>Here are some of the projects that I have worked on</p>
 
-    <div class="mt-5 flex space-x-4 flex-wrap">
-        <span class="border-2 border-black rounded-md p-1 flex space-x-2">
-           <span>
-            Svelte Dictionary
-           </span>
-           <span>
-            icon
-           </span>
-        </span>
-        <span class="border-2 border-black rounded-md p-1 flex space-x-2">
-           <span>
-            Svelte Library
-           </span>
-           <span>
-            icon
-           </span>
-        </span>
+    <p class='font-medium'>Personal Projects</p>
+
+  <div class="grid gap-5">
+    {#each personalProjects as project  (project.id) }
+   <section class="mt-5">
+    <div class="flex justify-between">
+        <h1 class="uppercase">{project.title}</h1>
+        <div class="flex space-x-3">
+            <span><a href={project.github} target="_blank"><Icon  name='github-solid'/></a></span>
+            <span><a href={project.web} target="_blank"><Icon  name='globe-outline'/></a></span>
+        </div>
     </div>
 
+    <p>{project.description}</p>
 
-
-    <!-- images -->
-    <Gallery class='sm:grid-cols-2 gap-2'>
-        {#each images as {src, alt,link,id} (id) }
-            <a class="rounded-lg" target="_blank" href={link}>
-                <img src={src} alt={alt} class="rounded-lg">
-            </a>
+    <div class='flex space-x-3'>
+        {#each project.languages as {id, title}  (id)}
+        <p class="bg-primary-200 p-1 rounded-[12px] uppercase text-xs font-light">{title}</p>
         {/each}
-    </Gallery>
+    </div>
+</section>
+{/each}
+  </div>
+
+   
+
+
+   
 
 
 
