@@ -19,6 +19,9 @@
         <FooterIcon target='_blank' href="https://github.com/kobby18-50">
           <Icon name="github-solid" class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
         </FooterIcon>
+        <!-- <FooterIcon target='_blank' href="https://github.com/kobby18-50">
+          <Icon name="mailbox-outline" class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+        </FooterIcon> -->
         
       </div>
     </div>

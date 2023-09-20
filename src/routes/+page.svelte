@@ -12,7 +12,7 @@ import Hero from "../components/Hero.svelte";
 <!-- intro -->
 <div class='mt-10 mb-5' >
 	<Heading customSize='text-base' class='' >Intro</Heading>
-<p>I am a software engineer with 3 years of experience. I develop fast and reliable applications for small to medium scale businesses. I have strong technical, communication and product management skills.</p>
+<p>I am a software engineer with 2 years of experience. I develop fast and reliable applications for small to medium scale businesses. I have strong technical, communication and product management skills.</p>
 </div>
 
 

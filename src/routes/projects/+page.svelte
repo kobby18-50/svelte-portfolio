@@ -115,17 +115,17 @@
 
     <p>Here are some of the projects that I have worked on</p>
 
-    <p class='font-medium'>Personal Projects</p>
+    <p class='font-medium mt-5'>Personal Projects</p>
 
   <div class="grid gap-5">
     {#each personalProjects as project  (project.id) }
    <section class="mt-5">
-    <div class="flex justify-between">
+    <div class="flex justify-between mb-2">
         <h1 class="uppercase">{project.title}</h1>
-        <div class="flex space-x-3">
-            <span><a href={project.github} target="_blank"><Icon  name='github-solid'/></a></span>
+        <div class="flex space-x-3 mt-2">
+            <span><a href={project.github} target="_blank"><Icon class='text-gray-500 dark:text-gray-500 hover:bg-primary-200 rounded-full' name='github-solid'/></a></span>
             {#if project.web}
-            <span><a href={project.web} target="_blank"><Icon  name='globe-outline'/></a></span>
+            <span><a href={project.web} target="_blank"><Icon class='text-gray-500 dark:text-gray-500 hover:bg-primary-200 rounded-full' name='globe-outline'/></a></span>
             {/if}
         </div>
     </div>

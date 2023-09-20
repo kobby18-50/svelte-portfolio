@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { Heading } from 'flowbite-svelte';
     import { Icon } from 'flowbite-svelte-icons'
-	import IMG from '../assets/me-bishwas.jpg';
+	import IMG from '../assets/img.png'
+	// import IMG from '../assets/me-bishwas.jpg';
 	import REACT from '../assets/icons/icons8-react.svg';
 	import TextCarousel from './TextCarousel.svelte';
 
@@ -58,7 +59,7 @@
 <main class="flex flex-col sm:flex-row sm:space-x-10">
 	<div>
 		<figure>
-			<img src={IMG} alt="" class="h-12 sm:w-28" />
+			<img src={IMG} alt="" class="animate-bounce" />
 		</figure>
 	</div>
 
