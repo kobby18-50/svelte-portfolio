@@ -64,7 +64,7 @@
 	</div>
 
 	<div>
-		<Heading tag="h3">Hey, Geeks!</Heading>
+		<Heading tag="h3" class='pt-2'>Hey, Geeks!</Heading>
 		<TextCarousel/>
 		
 
