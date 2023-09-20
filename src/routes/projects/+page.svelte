@@ -124,7 +124,9 @@
         <h1 class="uppercase">{project.title}</h1>
         <div class="flex space-x-3">
             <span><a href={project.github} target="_blank"><Icon  name='github-solid'/></a></span>
+            {#if project.web}
             <span><a href={project.web} target="_blank"><Icon  name='globe-outline'/></a></span>
+            {/if}
         </div>
     </div>
 
