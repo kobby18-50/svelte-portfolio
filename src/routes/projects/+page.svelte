@@ -28,7 +28,7 @@
             ],
 
             github : 'https://github.com/kobby18-50/react-job-search',
-            web : ''
+            web : 'https://react-job-search.vercel.app/'
         },
 
         {
