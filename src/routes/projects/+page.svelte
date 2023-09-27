@@ -22,7 +22,7 @@
                 },
                 {
                     id : 4,
-                    title : 'Jobsearch api'
+                    title : 'Jobsearch'
                 },
 
             ],
