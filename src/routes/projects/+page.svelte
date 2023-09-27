@@ -134,7 +134,7 @@
 
     <div class='flex space-x-3'>
         {#each project.languages as {id, title}  (id)}
-        <p class="bg-primary-200 p-1 rounded-[12px] uppercase text-xs font-light dark:text-gray-500">{title}</p>
+        <p class="bg-primary-200 p-1 px-2 rounded-[12px] uppercase text-xs font-light dark:text-gray-500">{title}</p>
         {/each}
     </div>
 </section>

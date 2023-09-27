@@ -62,8 +62,8 @@
 	</div>
 
 	<div>
-		<Heading tag="h3" class='pt-2'>Hey, Geeks!</Heading>
-		<TextCarousel/>
+		<Heading tag="h3" class='pt-2'>Edward Kwabena Tackie</Heading>
+		<h1 class="font-semibold pt-2">Software Engineer</h1>
 		
 
 		<p class="mt-5">
@@ -71,7 +71,7 @@
 			develop things. I'd rather say I am addicted to development and coding
 		</p>
 
-		<div class="flex mt-5 flex-wrap space-x-3 gap-y-3">
+		<div class="flex mt-5 flex-wrap gap-x-2 gap-y-3">
 			{#each skills.slice(0, visibleItems) as skill (skill.id)}
 				<span class="border-2 border-black p-1 rounded-md text-xs flex hover:bg-green-300">
 					<span class="flex space-x-2">
