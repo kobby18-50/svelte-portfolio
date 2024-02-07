@@ -3,7 +3,7 @@
         {
             id : 1,
             startdate : 'november 2022',
-            endDate : '',
+            endDate : 'january 2024',
             role : 'junior front end developer',
             company: 'axon information systems',
             duties : 'My duties includes but not limited to building front end applications with mordern web frameworks',

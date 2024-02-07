@@ -1,5 +1,5 @@
 <script>
-import { DarkMode } from "flowbite-svelte";
+import { DarkMode, NavLi, NavUl } from "flowbite-svelte";
 import {page} from '$app/stores'
 </script>
 
@@ -8,11 +8,16 @@ import {page} from '$app/stores'
     <DarkMode/>
 </nav>
 <nav class="">
-    <div class="justify-center flex mt-3">
-        <ul class="flex space-x-10 ">
+    <div class="">
+        <!-- <NavUl ulClass='flex space-x-10'>
+            <NavLi href='/'>Home</NavLi>
+            <NavLi href='/project'>Projects</NavLi>
+            <NavLi href='/experience'>Experience</NavLi>
+        </NavUl> -->
+        <ul class="justify-center flex mt-3 space-x-10">
             <li class:active={$page.url.pathname === "/"}><a href="/">Home</a></li>
             <li class:active={$page.url.pathname === "/projects" }><a href="/projects">Projects</a></li>
-            <li class:active={$page.url.pathname === "/experiences"}><a href="/experiences">Experience</a></li>
+            <li class:active={$page.url.pathname === "/experience"}><a href="/experience">Experience</a></li>
         </ul>
     </div>
 </nav>
